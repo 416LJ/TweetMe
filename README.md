@@ -121,7 +121,7 @@
       * [ ] process.env.MONGO_URI 
   * [ ] show mlab
   * [ ] deploy with env variables
-    * [ ] now -e MONGO_URI=@meower-db
+    * [ ] now -e MONGO_URI=@tweetme-db
   * [ ] add alias  
 * [ ] deploy client folder with NOW
   * [ ] set API_URL based on hostname
