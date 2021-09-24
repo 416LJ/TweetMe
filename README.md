@@ -108,9 +108,9 @@
 
 ## Back-end
 
-* [ ]
-  * [ ]
-* [ ]
+* [ ] npm install bad-words
+  * [ ] use filter before insert into DB
+* [ ] npm install express-rate-limit
   * [ ]
 
 ## Deployment stage
