@@ -47,8 +47,8 @@
 
 * [x] Create server folder
 * [x] npm init -y
-* [ ] npm install express morgan
-* [ ] setup index.js
+* [x] npm install express morgan
+* [x] setup index.js
 * [ ] add GET / route
 * [ ] add POST / tweet route
   * [ ] log out
