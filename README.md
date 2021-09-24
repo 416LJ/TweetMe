@@ -111,7 +111,7 @@
 * [ ] npm install bad-words
   * [ ] use filter before insert into DB
 * [ ] npm install express-rate-limit
-  * [ ]
+  * [ ] limit to 1 request every 15 seconds
 
 ## Deployment stage
 
