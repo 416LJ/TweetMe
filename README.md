@@ -45,8 +45,8 @@
 
 ## Back-end 1
 
-* [ ] Create server folder
-* [ ] npm init -y
+* [x] Create server folder
+* [x] npm init -y
 * [ ] npm install express morgan
 * [ ] setup index.js
 * [ ] add GET / route
