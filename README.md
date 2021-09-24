@@ -24,7 +24,7 @@
 * [ ] 🚀 Deploy DB online
 * [ ] 🚀 Deploy Server online
 
-## Front-end
+## Front-end 1
 
 * [x] Create client folder
 * [x] Setup index.html
@@ -32,18 +32,18 @@
   * url: http://getskeleton.com/
   * url: https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css
 * [x] Create header
-* [ ] Create form
-  * [ ] Name
-  * [ ] Content
-  * [ ] u-full-width to both inputs
-* [ ] Get the form submit
-* [ ] Hide the form
-* [ ] Show loading GIF
-* [ ] Get data from form
-* [ ] Get user input from client
-* [ ] Hide/Show elements (UI client side)
+* [x] Create form
+  * [x] Name
+  * [x] Content
+  * [x] u-full-width to both inputs
+* [x] Get the form submit
+* [x] Hide the form
+* [x] Show loading GIF
+* [x] Get data from form
+* [x] Get user input from client
+* [x] Hide/Show elements (UI client side)
 
-## Back-end
+## Back-end 1
 
 * [ ] Create server folder
 * [ ] npm init -y
@@ -53,13 +53,13 @@
 * [ ] add POST / tweet route
   * [ ] log out
 
-## Front-end
+## Front-end 2
 
 * [ ] fetch POST / tweet with form data
 * [ ] diagnose potential issues
 * [ ] send user input from client to server VIA fetch
 
-## Back-end
+## Back-end 2
 
 * [ ] npm install cors
 * [ ] make sure server is receiving data
@@ -81,19 +81,19 @@
   * [ ] respond with newly created tweet
 * [ ] store tweet in DB
 
-## Front-end
+## Front-end 3
 
 * [ ] logout created tweet after POST
 * [ ] show the form
 * [ ] hide loading GIF
 
-## Back-end
+## Back-end 3
 
 * [ ] GET / tweets
   * [ ] repsond with tweets
 * [ ] retrieve tweets from DB on server
 
-## Front-end
+## Front-end 4
 
 * [ ] fetch GET / tweets
   * [ ] iterate over tweets array
@@ -106,14 +106,14 @@
 * [ ] Hide/Show elements (UI client side)
 * [ ] add elements to client page
 
-## Back-end
+## Back-end 4
 
 * [ ] npm install bad-words
   * [ ] use filter before insert into DB
 * [ ] npm install express-rate-limit
   * [ ] limit to 1 request every 15 seconds
 
-## Deployment stage
+## Deployment stage - FINAL
 
 * [ ] deploy server with NOW
   * [ ] setup env variables
