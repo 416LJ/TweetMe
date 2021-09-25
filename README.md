@@ -29,8 +29,8 @@
 * [x] Create client folder
 * [x] Setup index.html
 * [x] Bring in external CSS :
-  * url: http://getskeleton.com/
-  * url: https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css
+  * http://getskeleton.com/
+  * https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css
 * [x] Create header
 * [x] Create form
   * [x] Name
