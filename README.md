@@ -24,7 +24,7 @@
 * [ ] 🚀 Deploy DB online
 * [ ] 🚀 Deploy Server online
 
-## Front-end 1
+## Front-end Stage 1
 
 * [x] Create client folder
 * [x] Setup index.html
@@ -43,7 +43,7 @@
 * [x] Get user input from client
 * [x] Hide/Show elements (UI client side)
 
-## Back-end 1
+## Back-end Stage 1
 
 * [x] Create server folder
 * [x] npm init -y
@@ -53,13 +53,13 @@
 * [ ] add POST / tweet route
   * [ ] log out
 
-## Front-end 2
+## Front-end Stage 2
 
 * [ ] fetch POST / tweet with form data
 * [ ] diagnose potential issues
 * [ ] send user input from client to server VIA fetch
 
-## Back-end 2
+## Back-end Stage 2
 
 * [ ] npm install cors
 * [ ] make sure server is receiving data
@@ -81,19 +81,19 @@
   * [ ] respond with newly created tweet
 * [ ] store tweet in DB
 
-## Front-end 3
+## Front-end Stage 3
 
 * [ ] logout created tweet after POST
 * [ ] show the form
 * [ ] hide loading GIF
 
-## Back-end 3
+## Back-end Stage 3
 
 * [ ] GET / tweets
   * [ ] repsond with tweets
 * [ ] retrieve tweets from DB on server
 
-## Front-end 4
+## Front-end Stage 4
 
 * [ ] fetch GET / tweets
   * [ ] iterate over tweets array
@@ -106,14 +106,14 @@
 * [ ] Hide/Show elements (UI client side)
 * [ ] add elements to client page
 
-## Back-end 4
+## Back-end Stage 4
 
 * [ ] npm install bad-words
   * [ ] use filter before insert into DB
 * [ ] npm install express-rate-limit
   * [ ] limit to 1 request every 15 seconds
 
-## Deployment stage - FINAL
+## Deployment Stage - FINAL
 
 * [ ] deploy server with NOW
   * [ ] setup env variables
