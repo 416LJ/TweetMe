@@ -131,7 +131,7 @@
 
 * add comments/replies to tweets
 * user accounts
-  * signup/login
+  * sign-up/login
 * user profiles
   * show tweets from only following users
 * search tweets
