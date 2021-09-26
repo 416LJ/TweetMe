@@ -1,12 +1,18 @@
+body {background-color: #e8e8e8;}
+
 .title {
     text-align: center;
 }
 
-.tweet-form, .loading {
+.tweet-form, .loading{
     width: 50%;
     margin: 0 auto;
 }
 
 .loading {
     text-align: center;
+}
+.tweets {
+    width: 50%;
+    margin: 0 auto;
 }

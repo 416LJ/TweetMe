@@ -89,29 +89,29 @@
 
 ## Back-end Stage 3
 
-* [ ] GET / tweets
-  * [ ] repsond with tweets
-* [ ] retrieve tweets from DB on server
+* [x] GET / tweets
+  * [x] respond with tweets
+* [x] retrieve tweets from DB on server
 
 ## Front-end Stage 4
 
-* [ ] fetch GET / tweets
-  * [ ] iterate over tweets array
-  * [ ] append each tweet to page
-  * [ ] reverse order of tweets
-  * [ ] show the form
-  * [ ] hide loading GIF
-* [ ] fetch GET / tweets after creating new tweet
-* [ ] retrieve data from server on client using fetch
-* [ ] Hide/Show elements (UI client side)
-* [ ] add elements to client page
+* [x] fetch GET / tweets
+  * [x] iterate over tweets array
+  * [x] append each tweet to page
+  * [x] reverse order of tweets
+  * [x] show the form
+  * [x] hide loading GIF
+* [x] fetch GET / tweets after creating new tweet
+* [x] retrieve data from server on client using fetch
+* [x] Hide/Show elements (UI client side)
+* [x] add elements to client page
 
 ## Back-end Stage 4
 
-* [ ] npm install bad-words
-  * [ ] use filter before insert into DB
-* [ ] npm install express-rate-limit
-  * [ ] limit to 1 request every 15 seconds
+* [x] npm install bad-words
+  * [x] use filter before insert into DB
+* [x] npm install express-rate-limit
+  * [x] limit to 1 request every 15 seconds
 
 ## Deployment Stage - FINAL
 

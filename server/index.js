@@ -1,13 +1,21 @@
 const express = require('express');
 const cors = require('cors');
+const Filter = require('bad-words');
+const rateLimit = require("express-rate-limit");
+    
+
+
 const monk = require('monk');
 const app = express();
 const db = monk('localhost/tweetme');
+
+const filter = new Filter();
 //tweets is a collection in our db
 const tweets = db.get('tweets');
 
 app.use(cors());
 app.use(express.json());
+
 
 app.get('/',(req, res) =>{
     res.json({
@@ -16,18 +24,30 @@ app.get('/',(req, res) =>{
 });
 
 
+app.get('/tweets', (req, res) => {
+    tweets.find().then(tweet => {
+        res.json(tweet);
+    });
+});
+
+
 function isValidTweet(tweet){
     return tweet.name && tweet.name.toString().trim() !== '' &&
     tweet.content && tweet.content.toString().trim() !== '';
 }
 
-app.post('/tweet',(req, res) => {
+app.use(rateLimit({
+    windowMs: 30 * 1000, // 1 req / 30sec
+    max: 1 
+  }));
+
+app.post('/tweets',(req, res) => {
     if(isValidTweet(req.body)){
         //insert into DB
 
         const tweet = {
-            name: req.body.name.toString(),
-            content: req.body.content.toString(),
+            name: filter.clean(req.body.name.toString()),
+            content: filter.clean(req.body.content.toString()),
             created: new Date()
         };
 
