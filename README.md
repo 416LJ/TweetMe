@@ -70,22 +70,22 @@
 * [x] if not valid
   * [x] error code 422
   * [x] invalid tweet (fields cannot be empty)
-* [ ] setup DB connection
-  * [ ] npm install monk
-  * [ ] connect to db
-  * [ ] created tweet collection
-* [ ] if valid
-  * [ ] create new tweet object with
-    * [ ] name, content, timestamp
-  * [ ] insert into DB
-  * [ ] respond with newly created tweet
-* [ ] store tweet in DB
+* [x] setup DB connection
+  * [x] npm install monk
+  * [x] connect to db
+  * [x] created tweet collection
+* [x] if valid
+  * [x] create new tweet object with
+    * [x] name, content, timestamp
+  * [x] insert into DB
+  * [x] respond with newly created tweet
+* [x] store tweet in DB
 
 ## Front-end Stage 3
 
-* [ ] logout created tweet after POST
-* [ ] show the form
-* [ ] hide loading GIF
+* [x] logout created tweet after POST
+* [x] show the form
+* [x] hide loading GIF
 
 ## Back-end Stage 3
 
