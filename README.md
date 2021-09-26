@@ -49,27 +49,27 @@
 * [x] npm init -y
 * [x] npm install express morgan
 * [x] setup index.js
-* [ ] add GET / route
-* [ ] add POST / tweet route
-  * [ ] log out
+* [x] add GET / route
+* [x] add POST / tweet route
+  * [x] log out
 
 ## Front-end Stage 2
 
-* [ ] fetch POST / tweet with form data
-* [ ] diagnose potential issues
-* [ ] send user input from client to server VIA fetch
+* [x] fetch POST / tweet with form data
+* [x] diagnose potential issues install cors
+* [x] send user input from client to server VIA fetch
 
 ## Back-end Stage 2
 
-* [ ] npm install cors
-* [ ] make sure server is receiving data
-* [ ] add JSON parser MWare
-* [ ] validate input name and content
-  * [ ] must be string
-  * [ ] field cannot be empty
-* [ ] if not valid
-  * [ ] error code 422
-  * [ ] invalid tweet (fields cannot be empty)
+* [x] npm install cors
+* [x] make sure server is receiving data
+* [x] add JSON parser MWare
+* [x] validate input name and content
+  * [x] must be string
+  * [x] field cannot be empty
+* [x] if not valid
+  * [x] error code 422
+  * [x] invalid tweet (fields cannot be empty)
 * [ ] setup DB connection
   * [ ] npm install monk
   * [ ] connect to db
