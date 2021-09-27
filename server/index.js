@@ -66,6 +66,13 @@ app.post('/tweets',(req, res) => {
     }
 });
 
+app.use((error, req, res, next) => {
+    res.status(500);
+    res.json({
+      message: error.message
+    });
+  });
+
 app.listen(5000,() => {
     console.log("listening on port");
 })
