@@ -7,7 +7,7 @@ const rateLimit = require("express-rate-limit");
 
 const monk = require('monk');
 const app = express();
-const db = monk('localhost/tweetme');
+const db = monk(process.env.MONGO_URI || 'localhost/tweetme');
 
 const filter = new Filter();
 //tweets is a collection in our db
@@ -22,6 +22,7 @@ app.get('/',(req, res) =>{
         message: "Hello Laxsan yooo"
     })
 });
+
 
 
 app.get('/tweets', (req, res) => {
