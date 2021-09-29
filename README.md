@@ -115,7 +115,7 @@
 
 ## Deployment Stage - FINAL
 
-* [ ] deploy server with NOW
+* [ ] deploy server with Cloud Host
   * [ ] setup env variables
     * [ ] DB connection
       * [ ] process.env.MONGO_URI 
@@ -123,7 +123,7 @@
   * [ ] deploy with env variables
     * [ ] now -e MONGO_URI=@tweetme-db
   * [ ] add alias  
-* [ ] deploy client folder with NOW
+* [ ] deploy client folder with Cloud Host
   * [ ] set API_URL based on hostname
 
 
