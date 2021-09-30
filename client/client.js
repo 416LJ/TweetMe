@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
 const loadingElement = document.querySelector('.loading');
 const tweetsElement = document.querySelector('.tweets');
-const API_URL = 'http://localhost:5000/tweets'
+const API_URL = 'https://tweetme-laxsan-server.herokuapp.com/tweets'
 
 
 loadingElement.style.display = '';
