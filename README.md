@@ -115,16 +115,16 @@
 
 ## Deployment Stage - FINAL
 
-* [ ] deploy server with Cloud Host
-  * [ ] setup env variables
-    * [ ] DB connection
-      * [ ] process.env.MONGO_URI 
-  * [ ] show mlab
-  * [ ] deploy with env variables
-    * [ ] now -e MONGO_URI=@tweetme-db
-  * [ ] add alias  
-* [ ] deploy client folder with Cloud Host
-  * [ ] set API_URL based on hostname
+* [x] deploy server with Heroku
+  * [x] setup env variables in Heroku
+    * [x] DB connection
+      * [x] process.env.MONGO_URI 
+  * [x] show MongoDb
+  * [x] deploy with env variables
+    * [x] now -e MONGO_URI=@tweetme-db
+  * [x] add alias  
+* [x] deploy client folder with Heroku
+  * [x] set API_URL based on hostname
 
 
 ## Future iterations
