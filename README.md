@@ -1,4 +1,4 @@
-# TweetMe
+# TweetMe [![CodeFactor](https://www.codefactor.io/repository/github/416lj/tweetme/badge/main)](https://www.codefactor.io/repository/github/416lj/tweetme/overview/main)
 ## App to demonstrate a FULL STACK 🥞 (Client, Server, DBs).
 ### App to demonstrate System Design also.
 # Check it out..
