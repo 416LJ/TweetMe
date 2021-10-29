@@ -7,7 +7,7 @@
 * Anyone can send me a message 📩
 * All tweets sent are visible by everyone 🗣.
 
-![My picture](mypic.jpeg)
+![My picture](shot.png)
 
 
 ## Objectives
