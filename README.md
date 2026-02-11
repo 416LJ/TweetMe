@@ -1,141 +1,85 @@
-# TweetMe [![CodeFactor](https://www.codefactor.io/repository/github/416lj/tweetme/badge/main)](https://www.codefactor.io/repository/github/416lj/tweetme/overview/main)
-## App to demonstrate a FULL STACK 🥞 (Client, Server, DBs).
-### App to demonstrate System Design also.
-# Check it out..
-## https://tweetme-laxsan.herokuapp.com/
-#### Features :
-* Anyone can send me a message 📩
-* All tweets sent are visible by everyone 🗣.
+# TweetMe 🐦
 
-![My picture](shot.png)
+TweetMe is a simple clone of Twitter (now X) built with vanilla JavaScript on the frontend and Node.js/Express on the backend. It allows users to post short messages and view a feed of recent tweets.
 
+## 🚀 Features
 
-## Objectives
+- **Post Tweets:** Users can submit their name and a message.
+- **Live Feed:** View all submitted tweets in reverse chronological order.
+- **Profanity Filter:** Automatically filters out bad words using the `bad-words` library.
+- **Rate Limiting:** Prevents spam by limiting users to one tweet every 30 seconds.
+- **Persistent Storage:** Tweets are stored in a MongoDB database.
 
-* [ ] 📝 System Design Diagram of Stack
-* [ ] 🔎 Explain between Client and Server
-* [ ] ⌨️ Get user input from Client
-* [ ] ➡ Send input to to Server from Client with fetch to Server
-* [ ] 📀 Store data in DB
-* [ ] 🔎 Retrieve data from DB on Server 
-* [ ] ⬅️ Retrieve data from Server on Client using fetch
-* [ ] 🙈 Hide/Show element (UI client side)
-* [ ] ➕ Add element to client side
-* [ ] 🚀 Deploy Client online
-* [ ] 🚀 Deploy DB online
-* [ ] 🚀 Deploy Server online
+## 🛠 Tech Stack
 
-## Front-end Stage 1
+### Client
 
-* [x] Create client folder
-* [x] Setup index.html
-* [x] Bring in external CSS :
-  * http://getskeleton.com/
-  * https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css
-* [x] Create header
-* [x] Create form
-  * [x] Name
-  * [x] Content
-  * [x] u-full-width to both inputs
-* [x] Get the form submit
-* [x] Hide the form
-* [x] Show loading GIF
-* [x] Get data from form
-* [x] Get user input from client
-* [x] Hide/Show elements (UI client side)
+- **HTML5 & CSS3:** For structure and styling.
+- **Vanilla JavaScript:** For DOM manipulation and API interaction.
+- **Serve:** A static file server to host the client application.
 
-## Back-end Stage 1
+### Server
 
-* [x] Create server folder
-* [x] npm init -y
-* [x] npm install express morgan
-* [x] setup index.js
-* [x] add GET / route
-* [x] add POST / tweet route
-  * [x] log out
+- **Node.js & Express:** For the REST API.
+- **MongoDB & Monk:** For the database.
+- **Cors:** To handle Cross-Origin Resource Sharing.
+- **Bad-Words:** For filtering profane content.
+- **Express-Rate-Limit:** For API rate limiting.
 
-## Front-end Stage 2
+## 📦 Installation & Usage
 
-* [x] fetch POST / tweet with form data
-* [x] diagnose potential issues install cors
-* [x] send user input from client to server VIA fetch
+### Prerequisites
 
-## Back-end Stage 2
+- [Node.js](https://nodejs.org/) installed.
+- [MongoDB](https://www.mongodb.com/) installed and running locally, or a cloud MongoDB instance.
 
-* [x] npm install cors
-* [x] make sure server is receiving data
-* [x] add JSON parser MWare
-* [x] validate input name and content
-  * [x] must be string
-  * [x] field cannot be empty
-* [x] if not valid
-  * [x] error code 422
-  * [x] invalid tweet (fields cannot be empty)
-* [x] setup DB connection
-  * [x] npm install monk
-  * [x] connect to db
-  * [x] created tweet collection
-* [x] if valid
-  * [x] create new tweet object with
-    * [x] name, content, timestamp
-  * [x] insert into DB
-  * [x] respond with newly created tweet
-* [x] store tweet in DB
+### 1. Backend Setup (Server)
 
-## Front-end Stage 3
+Navigate to the server directory and install dependencies:
 
-* [x] logout created tweet after POST
-* [x] show the form
-* [x] hide loading GIF
+```bash
+cd server
+npm install
+```
 
-## Back-end Stage 3
+Start the server:
 
-* [x] GET / tweets
-  * [x] respond with tweets
-* [x] retrieve tweets from DB on server
+```bash
+npm start
+# OR for development with auto-restart
+npm run dev
+```
 
-## Front-end Stage 4
+The server will start on `http://localhost:5000` (or `process.env.PORT`).
+Ensure your MongoDB is running at `localhost/tweetme` or set the `MONGO_URI` environment variable.
 
-* [x] fetch GET / tweets
-  * [x] iterate over tweets array
-  * [x] append each tweet to page
-  * [x] reverse order of tweets
-  * [x] show the form
-  * [x] hide loading GIF
-* [x] fetch GET / tweets after creating new tweet
-* [x] retrieve data from server on client using fetch
-* [x] Hide/Show elements (UI client side)
-* [x] add elements to client page
+### 2. Frontend Setup (Client)
 
-## Back-end Stage 4
+Navigate to the client directory and install dependencies:
 
-* [x] npm install bad-words
-  * [x] use filter before insert into DB
-* [x] npm install express-rate-limit
-  * [x] limit to 1 request every 15 seconds
+```bash
+cd client
+npm install
+```
 
-## Deployment Stage - FINAL
+Start the client:
 
-* [x] deploy server with Heroku
-  * [x] setup env variables in Heroku
-    * [x] DB connection
-      * [x] process.env.MONGO_URI 
-  * [x] show MongoDb
-  * [x] deploy with env variables
-    * [x] now -e MONGO_URI=@tweetme-db
-  * [x] add alias  
-* [x] deploy client folder with Heroku
-  * [x] set API_URL based on hostname
+```bash
+npm start
+```
 
+This will serve the client interactively. Open the provided URL (usually `http://localhost:5000` if serving via `serve`, but check the output) to view the app.
 
-## Future iterations
+**Note:** You might need to adjust the `API_URL` in `client/client.js` if your server is running on a different port or host. Currently it points to:
+THE APP IS NO LONGER HOSTED ON HEROKU. SORRY.
+Change it to:
+`http://localhost:5000/tweets`
+for local development.
 
-* add comments/replies to tweets
-* user accounts
-  * sign-up/login
-* user profiles
-  * show tweets from only following users
-* search tweets
-* implement hashtags
-* implement user tags
-realtime feed of tweets with auto-load
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
